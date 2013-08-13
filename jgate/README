@@ -1,0 +1,44 @@
+================================
+=== OJS JGATE Export Plugin
+=== Version: 1.1
+=== Release date: August 5, 2013
+=== Author: Rodrigo De la garza <dlgarza@librelloph.com>
+================================
+
+About
+-----
+This plugin for OJS 2 provides an import/export plugin to generate metadata information for articles 
+and issues for indexing in Jgate.
+
+License
+-------
+This plugin is licensed under the GNU General Public License v2. See the file COPYING for the 
+complete terms of this license.
+
+System Requirements
+-------------------
+Same requirements as the OJS 2.x core.
+
+Installation
+------------
+To install the plugin:
+ - copy the crossref folder into OJS/plugins/importexport
+
+The export functionality can then be accessed through: 
+ - Home > User > Journal Management > Import/Export Data > JGATE XML Export Plugin
+
+Known Issues/Limitations
+---------
+
+Localization
+------------
+
+
+Contact/Support
+---------------
+Please email the author for support, bugfixes, or comments.
+Email: <dlgarza@librelloph.com>
+
+Version History
+---------------
+1.0	- Initial Release
