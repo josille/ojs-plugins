@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE locale SYSTEM "../../../../../lib/pkp/dtd/locale.dtd">
+
+<!--
+  * locale.xml
+  *
+  *Copyright (c) 2013 Rodrigo De la garza
+  * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+  *
+  * Localization strings for the en_US (U.S. English) locale.
+  *
+  * $Id$
+  -->
+ 
+<locale name="en_US" full_name="U.S. English">
+	<message key="plugins.importexport.galleyExtract.displayName">Galley Exporter Plugin</message>
+	<message key="plugins.importexport.galleyExtract.description">Export issues files(Galley PDF,XML) in a zip.</message>
+	
+	<message key="plugins.importexport.galleyExtract.export">Export Data</message>
+	<message key="plugins.importexport.galleyExtract.export.issues">Export Issues</message>
+	<message key="plugins.importexport.galleyExtract.export.selectIssue">Select an Issue to export.</message>
+	<message key="plugins.importexport.galleyExtract.export.articles">Export Articles</message>
+	<message key="plugins.importexport.galleyExtract.export.selectArticle">Select Articles to export.</message>
+	
+	<message key="plugins.importexport.galleyExtract.cliUsage"><![CDATA[Usage: 
+{$scriptName} {$pluginName} [xmlFileName] [journal_path] articles [articleId1] [articleId2] ...
+{$scriptName} {$pluginName} [xmlFileName] [journal_path] issue [issueId]
+]]></message>
+	<message key="plugins.importexport.galleyExtract.cliError">ERROR:</message>
+
+	<message key="plugins.importexport.galleyExtract.export.error.issueNotFound">No issue matched the specified issue ID "{$issueId}".</message>
+	<message key="plugins.importexport.galleyExtract.export.error.articleNotFound">No article matched the specified article ID "{$articleId}".</message>
+
+	<message key="plugins.importexport.galleyExtract.errors.noDOIprefix">A valid DOI prefix must be specified in the Journal Setup in order to use this plugin.</message>
+</locale>
