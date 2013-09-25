@@ -150,9 +150,15 @@ class JGateExportDom {
 		/* Article Keywords TODO*/
 		$subjects = array_map('trim', explode(';', $article->getLocalizedSubject()));
 
-		foreach ($subjects as $keyword) {
-			XMLCustomWriter::createChildWithText($doc, $articleNode, 'Keywords', $keyword, false);
+		$keywords = '';
+		foreach ($subjects as $key => $keyword) {
+			$keywords .= $keyword;
+			if(($key+1) != count($subjects))
+			{
+				$keywords .= ';';
+			}
 		}
+		XMLCustomWriter::createChildWithText($doc, $articleNode, 'Keywords', $keywords, false);
 		
 		/* --- Abstract --- */
 		if ($article->getLocalizedAbstract()) {
