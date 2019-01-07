@@ -134,7 +134,7 @@ class JGateExportDom {
 		XMLCustomWriter::createChildWithText($doc, $articleNode, 'Pubdate', date('d-m-Y', $parsedPubdate));
 
 		/* Authors */
-		$AuthorsAffiNode =& JGateExportDom::generateAuthorsDom(&$doc, $articleNode, $article->getAuthors());
+		$AuthorsAffiNode =& JGateExportDom::generateAuthorsDom($doc, $articleNode, $article->getAuthors());
 		XMLCustomWriter::appendChild($articleNode, $AuthorsAffiNode);
 		
 
